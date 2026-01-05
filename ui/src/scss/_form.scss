@@ -1242,12 +1242,16 @@ select {
     flex-direction: column;
     width: 100%;
     overflow: visible; // https://github.com/pocketbase/pocketbase/issues/7223
+<<<<<<< HEAD
     .form-field label ~ & {
         padding-bottom: 6px;
         padding-top: 4px;
     }
+=======
+>>>>>>> a95d49b95c22522ba55e2d229ea328914753163d
     .cm-editor {
         flex-grow: 1;
+        min-height: 0;
         border: 0 !important;
         outline: none !important;
         .cm-line {
@@ -1306,6 +1310,18 @@ select {
     }
     .ͼf {
         color: var(--dangerColor);
+    }
+    .form-field label ~ & {
+        padding-bottom: 6px;
+        padding-top: 4px;
+    }
+    .form-field & {
+        padding-left: 0;
+        padding-right: 0;
+        .cm-scroller {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
     }
 }
 
